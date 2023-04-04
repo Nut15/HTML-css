@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: left;
+}
+
+form{
+    text-align: center;
+    background-color: rgb(148, 148, 148);
+}
+
+input{
+    
+}
+
+label{
+    font-size: small;
+    text-align-last: center;
+}

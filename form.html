@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <!-- every input can only be put into form to be submitted-->
+    <!-- input is single -->
+    <!-- for-in label and the id-in input needs to be the same -->
+    <form action="demo.php">
+        <label for="username">username</label> 
+        <input type="text" name="username" autocomplete="off" id="username" required placeholder="please enter text"> <br>
+        password
+        <input type="password" name="pass" maxlength="8" required placeholder="please enter number"> <br>
+        sex <br>
+        <input type="radio" name="sex" value="female" checked> female
+        <input type="radio" name="sex" value="male"> male <br>
+        yes or no?
+        <input type="radio" name="yes" value="yes">yes
+        <input type="radio" name="yes" value="no">no
+        <br>
+        what do you like?
+        <input type="checkbox" name="fav" value="apple" checked>apple
+        <input type="checkbox" name="fav" value="banana">banana
+        <input type="checkbox" name="fav" value="pear">pear
+        <input type="checkbox" name="fav" value="orange">orange
+        <br>
+        submit file
+        <input type="file" name="document" value="submit document">
+        <br>
+        <select name="nationality" id="">
+            <option value="China">China</option>
+            <option value="Australia">Australia</option>
+            <option value="England" selected>England</option>
+            <option value="America">America</option>
+            <option value="India">India</option>
+        </select>
+        <br>
+        <!-- cols and rows are usually changed by css -->
+        <textarea name="comments" id="" cols="30" rows="3">what would you like to write</textarea>
+        <br>
+        <!-- submit to database -->
+        <input type="submit" name="submitbut" value="submit form">
+        <input type="reset" name="resetbut" value="reset form">
+        <input type="button" name="buttonbut" value="not a bot?">
+    </form>
+</body>
+</html>

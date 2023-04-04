@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    color: #4181ee;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 300px;
+    min-height: 250px;
+    box-sizing: border-box;
+    background-color: darkcyan;
+    color: #fff;
+    padding: 30px;
+    border-radius: 3px;
+    margin: 20px;
+    box-shadow: rgb(0, 0, 0) 0px 30px 60px -20px;
+}
+
+.cardimage img{
+    width: 100%;
+}
+
+.card:nth-child(2){
+    background-color: #4181ee;
+}
+
+.card:last-child{
+    background-color: #7b5cb1;
+}
+
+.cardinfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardprice{
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
