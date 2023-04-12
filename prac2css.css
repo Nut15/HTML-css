@@ -1,0 +1,56 @@
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 80px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+ }
+
+.ui{
+    display: flex;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    margin: 0px 20px;
+
+}
+
+.signup{
+    
+}
+
+body{
+    text-align: center;
+    background-image: url(./Rectangle\ 107.png);
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+
+a:link{
+    color: pink;
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    border-radius: 50px;
+    background-color:pink;
+    padding: 5px;
+}
+
+.title{
+    font-family: "Noto Sans SC";
+    color: white;
+}
+
+.content{
+    color: #333;
+}

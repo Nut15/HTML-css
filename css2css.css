@@ -1,0 +1,16 @@
+h4{
+    color: blue;
+    font-size: medium;
+}
+ol li{
+    color: pink;
+}
+ol li a{
+    color: orange;
+}
+.nav li a{
+    color: yellow;
+}
+.shop > a{
+    color: gold;
+}

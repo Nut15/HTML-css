@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,
+        p,
+        .pig li{
+            color: pink;
+        }
+        a:link{
+            color: red;
+            text-decoration: none;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: aliceblue;
+        }
+        a:active{
+            color: black;
+        }
+        input{
+            width: 245px;
+            height: 35px;
+        }
+        /* input, td: inline-block. can change height+width */
+        input:focus{
+            background-color: aqua;
+            color: blue;
+        }
+        td{
+            width:200px;
+            height: 35px;
+        }
+        a{
+            display: block;
+            height: 300px;
+        }
+        div{
+            display: inline;
+            background-color: aqua;
+            /* bg-color of div is purple */
+        }
+        span{
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+        }
+        div{
+            background-color: purple;
+            width: 200px;
+            height: 40px;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+        }
+        .box2{
+            width: 300px;
+            height: 300px;
+            background-image: url("https://w7.pngwing.com/pngs/941/692/png-transparent-black-small-apple-logo-logo-material-apple-logo-black-thumbnail.png");
+            background-repeat: no-repeat;
+        }
+        .box3{
+            background-image: url("https://w7.pngwing.com/pngs/941/692/png-transparent-black-small-apple-logo-logo-material-apple-logo-black-thumbnail.png");
+            background-color: yellow;
+            background-repeat: repeat-y;
+            width: 500px;
+            height: 500px;
+        }
+        /* if only writes one direction, then the default one must be center - bg-position*/
+
+        h3{
+            width: 300px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 30px;
+            font-weight: 400;
+            background-image: url(https://pngimg.com/uploads/dot/small/dot_PNG29.png);
+            background-repeat: no-repeat;
+            background-color: blue;
+            background-position: left /* center */;
+            text-indent: 4em;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: lightblue;
+            background-image: url(https://pngimg.com/uploads/dot/small/dot_PNG29.png);
+            background-repeat: no-repeat;
+            background-position: center -20px;
+            color: blue;
+
+        }
+        body{
+            background-image: url(./map.jpg);
+            background-color: black;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div>cat</div>
+    <p>dog</p>
+    <span>george</span>
+    <ul class="pig">
+        <li>peppa</li>
+        <li>mum</li>
+        <li>dad</li>
+    </ul>
+    <a href="#" >hek</a>
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+    <tr>
+        <td>CellA</td>
+        <td>CellB</td>
+        <td>CellC</td>
+    </tr>
+    <div>fun times</div>
+    <span>goggy</span>
+    <div>center</div>
+    <p>------------------------------------</p>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <p>------------------------------------</p>
+    <h3>gimmebackg</h3>
+    <div class="box"><h2>ok?</h2></div>
+</body>
+</html>

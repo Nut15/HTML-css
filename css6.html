@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bigbox{
+            width: 500px;
+            height: 1400px;
+            background-color: pink;
+            margin: 0 auto;
+            transition: background-color 1s;
+        }
+        .bigbox:hover{
+            background-color: aquamarine;
+        }
+        .fixedbox{
+            width: 50px;
+            height: 150px;
+            background-color: cyan;
+            position: fixed;
+            left: 50%;
+            margin-left: 255px;
+            transition: all 1s ease 0.5s;
+        }
+        .fixedbox:hover{
+            width: 30px;
+            height: 40px;
+        }
+        .abox{
+            width: 40px;
+            height: 30px;
+            background-color: #333;
+            position: absolute;
+            top: 30px;
+            right: 5%;
+            z-index: -1;
+        }
+        .text__box{
+            width: 200px;
+            height: 30px;
+            background-color: violet;
+            position: absolute;
+            top: 30px;
+            left: 10%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        /* only when position setted to relative, absolute, fixed can use z-index */
+        /* default z-index value is 0 */
+    </style>
+</head>
+<body>
+    <div class="fixedbox"></div>
+    <div class="bigbox"></div>
+    <div class="abox"></div>
+    <div class="text__box">/* only when position setted to relative, absolute, fixed can use z-index */
+        /* default z-index value is 0 */</div>
+</body>
+</html>

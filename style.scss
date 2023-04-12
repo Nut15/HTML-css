@@ -1,0 +1,100 @@
+body{
+    font-size:15px;
+}
+
+ul{
+    font-size: 16px;
+    li{
+        color: aqua;
+        list-style: none;
+    }
+}
+
+// variable
+$primary-color:#555;
+
+div.box{
+    background-color: $primary-color;
+}
+
+h1.page-header{
+    border: 1px solid $primary-color;
+}
+
+// defining multiple variables
+
+$primary-border: 3px solid $primary-color;
+
+h2.page-header{
+    border: $primary-border;
+}
+
+//nesting &--> father
+
+.nav{
+    height:100px;
+    ul{
+        margin: 0;
+        li{
+            padding: 5px;
+            a{
+                display: block;
+                color: aqua;
+                &:hover{
+                    background-color: blue;
+                }
+            }
+        }
+    }
+}
+
+// define
+@mixin alert {
+    color:#555;
+    a{
+        color: pink;
+    }
+}
+
+// use
+.alert-warning{
+    @include alert;
+}
+
+// mixin add variables
+@mixin alert2 ($text-color,$background){
+    color: $text-color;
+    background-color: $background;
+}
+
+.alert-danger{
+    @include alert2(red, #333)
+}
+
+.alert-info{
+    @include alert2(orange, #333)
+}
+
+// @extend
+.button{
+    padding: 15px;
+    width: 200px;
+    height: 30px;
+}
+
+.button-info{
+    background-color: yellow;
+    @extend .button;
+}
+
+@import "base";
+h3{
+    color: $color;
+}
+
+// @each
+@each $animal in cat,dog,pig{
+    .#{$animal}-icon{
+        background-image: url("images/#{$animal}.png");
+    }
+}
