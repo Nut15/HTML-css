@@ -3,9 +3,9 @@ p{
 }
 
 h1{
+    width: 40px;
     background-color: #333;
 }
 
 div{
     height: 10px;
-}
